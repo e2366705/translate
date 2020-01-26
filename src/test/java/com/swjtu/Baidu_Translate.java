@@ -15,11 +15,11 @@ public class Baidu_Translate {
     public void Baidu_translate() {
 
         //  你要翻译的英文单词
-        String english_words = "system";
+        String english_words = "miss";
 
         //这个就是博客中的java反射的url
         final String url = "https://www.baidu.com/baidu?wd=" + english_words + "&tn=monline_4_dg&ie=utf-8";
-        // https://www.baidu.com/baidu?wd=system&tn=monline_4_dg&ie=utf-8
+        // https://www.baidu.com/baidu?wd=miss&tn=monline_4_dg&ie=utf-8
 
 
         try {
@@ -31,8 +31,7 @@ public class Baidu_Translate {
             //  id    是 #
             Elements readEl = doc.select(".op_dict_text2");
             String read = readEl.text();
-            System.out.println("========阅读数量=========：");
-            System.out.println("阅读数量：" + read);
+            System.err.println("中文意思是：" + read);
 
         } catch (IOException e) {
             e.printStackTrace();
