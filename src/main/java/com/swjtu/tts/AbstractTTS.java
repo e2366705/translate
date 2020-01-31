@@ -57,16 +57,21 @@ public abstract class AbstractTTS extends AbstractHttpAttribute implements HttpP
         String uri = Util.getUrlWithQueryString(url, formData);
         HttpGet request = new HttpGet(uri);
 
+        String file_name = formData.get("q");
+
         HttpResponse response = httpClient.execute(request);
         InputStream is = response.getEntity().getContent();
 
         // 将 TTS 结果保存为 mp3 音频文件，以待转换文本的 md5 码作为部分文件名
         StringBuilder saveFile = new StringBuilder();
-        saveFile.append(".\\Audio_source\\")
-                .append(this.getClass().getName())
-                .append("-")
-                .append(Util.md5(uri))
+        saveFile.append("src\\test\\java\\Audio_source\\")
+//                .append(this.getClass().getName())
+//                .append(this.getClass().getName())
+//                .append("-")
+//                .append(Util.md5(uri))
+                .append(file_name)
                 .append(".mp3");
+
 
         File file = new File(saveFile.toString());
         FileOutputStream fos = new FileOutputStream(file);
