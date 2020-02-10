@@ -64,7 +64,7 @@ public abstract class AbstractTTS extends AbstractHttpAttribute implements HttpP
 
         // 将 TTS 结果保存为 mp3 音频文件，以待转换文本的 md5 码作为部分文件名
         StringBuilder saveFile = new StringBuilder();
-        saveFile.append("src\\test\\java\\Audio_source\\")
+        saveFile.append("src\\main\\resources\\Static\\Audio_TTS\\")
 //                .append(this.getClass().getName())
 //                .append(this.getClass().getName())
 //                .append("-")
