@@ -8,36 +8,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-public class Baidu_Translate {
-
-
-    @Test
-    public void Baidu_translate() {
-
-        //  你要翻译的英文单词
-        String english_words = "miss";
-
-        //这个就是博客中的java反射的url
-        final String url = "https://www.baidu.com/baidu?wd=" + english_words + "&tn=monline_4_dg&ie=utf-8";
-        // https://www.baidu.com/baidu?wd=miss&tn=monline_4_dg&ie=utf-8
-
-
-        try {
-            //先获得的是整个页面的html标签页面
-            Document doc = Jsoup.connect(url).get();
-
-            //获取阅读数量
-            //  class 是 .
-            //  id    是 #
-            Elements readEl = doc.select(".op_dict_text2");
-            String read = readEl.text();
-            System.err.println("中文意思是：" + read);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
+public class Java_Spider {
 
     @Test
     public void java_spider() {

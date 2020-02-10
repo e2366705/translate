@@ -22,15 +22,17 @@ public class test {
     }
 
 
-    //   http://localhost:8083/test2?id=YXB
+    //  示例:  访问  http://localhost:8083/test2?id=YXB
+    //  会返回 你大哥还是你大哥~~~
     @RequestMapping(value="/test2",method=RequestMethod.GET)
     @ResponseBody           //此注解不能省略 否则ajax无法接受返回值
     public String update(HttpServletRequest request){
 
         System.err.println(request.getParameter("id"));
 
-        return request.getParameter("id");
+        return "你大哥还是你大哥~~~";
     }
-
-
 }
+
+
+

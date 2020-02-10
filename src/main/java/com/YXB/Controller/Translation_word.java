@@ -16,6 +16,6 @@ public class Translation_word {
     @RequestMapping(value="/word", method= RequestMethod.GET)
     public String Root(){
         System.out.println("Translation_word_Controller word");
-        return "index";
+        return "index.html";
     }
 }

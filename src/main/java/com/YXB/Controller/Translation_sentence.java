@@ -17,6 +17,6 @@ public class Translation_sentence {
     @RequestMapping(value="/sentence", method= RequestMethod.GET)
     public String Root(){
         System.out.println("Translation  sentence  controller ");
-        return "index";
+        return "index.html";
     }
 }

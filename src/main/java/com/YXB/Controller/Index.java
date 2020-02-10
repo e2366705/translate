@@ -11,7 +11,7 @@ public class Index {
     @RequestMapping(value="/", method= RequestMethod.GET)
     public String Root(){
         System.out.println("root controller");
-        return "index";
+        return "index.html";
     }
 }
 
