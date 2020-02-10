@@ -35,6 +35,5 @@ public class Play_local_media {
             player = new Player(buffer);
             player.play();
         }
-
     }
 }
