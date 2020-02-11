@@ -13,6 +13,11 @@ public class APIs {
 可以用的翻译 API:
 
 
+
+有道单词发音接口:
+http://dict.youdao.com/dictvoice?audio=hello
+
+
 http://translate.google.cn/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8&sl=auto&tl=zh_TW&q=calculate
 
 
