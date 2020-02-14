@@ -19,7 +19,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
-public class Translation {
+public class Translation_API_Test {
 
     /*
         1    获取 文本文件
