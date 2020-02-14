@@ -19,7 +19,7 @@ https://fanyi.baidu.com/?aldtype=16047#en/zh/distinct
 https://fanyi.baidu.com/?aldtype=16047#en/zh/miss
 
 
-有道单词发音接口:
+有道单词发音接口 ( TTS 音频文件 ):
 http://dict.youdao.com/dictvoice?audio=hello
 
 
