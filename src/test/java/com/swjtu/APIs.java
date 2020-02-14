@@ -14,6 +14,11 @@ public class APIs {
 
 
 
+百度翻译:
+https://fanyi.baidu.com/?aldtype=16047#en/zh/distinct
+https://fanyi.baidu.com/?aldtype=16047#en/zh/miss
+
+
 有道单词发音接口:
 http://dict.youdao.com/dictvoice?audio=hello
 
