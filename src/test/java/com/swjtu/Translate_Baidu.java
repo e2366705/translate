@@ -11,7 +11,7 @@ import java.io.IOException;
  * @author YXB
  * @date 2020/2/14 15:44
  */
-public class Baidu_Translate {
+public class Translate_Baidu {
 
 
 
@@ -45,46 +45,6 @@ public class Baidu_Translate {
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
-
-    // 百度翻译  短句
-    // 这个经常失效, 不好用
-    @Test
-    public void Sougou_translate_phrase() {
-
-        String  english_phrase = "a staple ingredient of comedy";
-        String chinese_meaning = null;
-
-        //这个就是博客中的java反射的url
-        final String url = "https://translate.google.cn/#view=home&op=translate&sl=en&tl=zh-CN&text=a%20staple%20ingredient%20of%20comedy";
-        // https://www.baidu.com/baidu?wd=a staple ingredient of comedy&tn=monline_4_dg&ie=utf-8
-
-        try {
-            //先获得的是整个页面的html标签页面
-            Document doc = Jsoup.connect(url).get();
-
-            //获取阅读数量
-            //  class 是 .
-            //  id    是 #
-            Elements readEl = doc.select(".op_sp_fanyi_line_two");
-            chinese_meaning = readEl.text();
-            System.err.println("中文意思是：" + chinese_meaning);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-
-
-
-
-
 
 
 
