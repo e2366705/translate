@@ -38,8 +38,8 @@ public class Translate_Baidu {
             //  class 是 .
             //  id    是 #
             Elements readEl = doc.select(".op_dict_text2");
-            String read = readEl.text();
-            System.err.println("中文意思是：" + read);
+            String word_chinese_meaning = readEl.text();
+            System.err.println("中文意思是：" + word_chinese_meaning);
 
         } catch (IOException e) {
             e.printStackTrace();
