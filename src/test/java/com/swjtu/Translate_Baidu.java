@@ -25,8 +25,17 @@ public class Translate_Baidu {
     @Test
     public void Baidu_translate_word() {
 
+
+        /*
+在 mac 操作系统中, 会导致乱码的问题...
+     当前的单词是   foxhounds
+     *** 日志(logs):  现在是第:  4078 条 , 现在时间是:  2020-02-26 02:38:55
+    程序随机暂停了:      3928     秒
+    中文意思是：狐𤟥; 猎狐狗; foxhound的复数; 原型： foxhound
+         */
+
         //  你要翻译的英文单词
-        String english_words = "miss";
+        String english_words = "foxhounds";
 
         //这个就是博客中的java反射的url
         final String url = "https://www.baidu.com/baidu?wd=" + english_words + "&tn=monline_4_dg&ie=utf-8";
