@@ -17,10 +17,6 @@ import java.util.List;
  * @date 2020/2/14 15:44
  */
 public class Translate_Google {
-
-
-
-
     // 翻译单词: miss (小姐)
     // 成功, 翻译只有'小姐'一个意思, 不全面           by 2020-02-10 12:06:09
     // 测试单词 miss Java JavaScript
@@ -29,7 +25,7 @@ public class Translate_Google {
         //  https://github.com/hujingshuang/MTrans
         Querier<AbstractTranslator> querierTrans = new Querier<>();  // 获取查询器
 
-        querierTrans.setParams(LANG.EN, LANG.ZH, "JavaScript");// 设置参数
+        querierTrans.setParams(LANG.EN, LANG.ZH, "miss");// 设置参数
 
         querierTrans.attach(new GoogleTranslator());// 向查询器中添加 Google 翻译器
 
